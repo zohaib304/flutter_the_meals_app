@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import './category_meals_screen.dart';
+import '../screens/category_meals_screen.dart';
 
 class CategoryItem extends StatelessWidget {
   final String id;
@@ -24,9 +24,11 @@ class CategoryItem extends StatelessWidget {
       borderRadius: BorderRadius.circular(5),
       child: Container(
         padding: const EdgeInsets.all(15),
-        child: Text(
-          title,
-          style: Theme.of(context).textTheme.title,
+        child: Center(
+          child: Text(
+            title,
+            style: Theme.of(context).textTheme.title,
+          ),
         ),
         decoration: BoxDecoration(
             gradient: LinearGradient(
