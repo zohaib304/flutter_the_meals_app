@@ -27,7 +27,7 @@ class CategoryItem extends StatelessWidget {
         child: Center(
           child: Text(
             title,
-            style: Theme.of(context).textTheme.title,
+            style: Theme.of(context).textTheme.headline1,
           ),
         ),
         decoration: BoxDecoration(
@@ -39,7 +39,7 @@ class CategoryItem extends StatelessWidget {
               begin: Alignment.topLeft,
               end: Alignment.bottomRight,
             ),
-            borderRadius: BorderRadius.circular(5)),
+            borderRadius: BorderRadius.circular(50)),
       ),
     );
   }
